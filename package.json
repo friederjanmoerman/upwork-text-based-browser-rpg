@@ -9,23 +9,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@medusajs/icons": "^2.5.1",
-    "@medusajs/ui": "^4.0.6",
-    "@medusajs/ui-preset": "^2.5.1",
-    "next": "15.2.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@medusajs/ui": "^2.0.0",
+    "next": "14.2.7",
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4.0.9",
+    "@medusajs/ui-preset": "^1.1.4",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9",
-    "eslint-config-next": "15.2.0",
-    "postcss": "^8.5.3",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
+    "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
