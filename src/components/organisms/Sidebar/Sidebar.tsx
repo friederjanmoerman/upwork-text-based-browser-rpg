@@ -2,7 +2,6 @@ import React from "react"
 
 import {
   StyledSidebar,
-  StyledSidebarHeader,
   StyledNavList,
   StyledNavItem,
   StyledNavItemLabel,
@@ -15,7 +14,7 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-  { label: "Commit a Crime" },
+  { label: "Commit a Crime", icon:  },
   { label: "Commit a Crime" },
   { label: "Commit a Crime" },
   { label: "Commit a Crime" },
@@ -24,7 +23,6 @@ const navItems: NavItem[] = [
 export function Sidebar() {
   return (
     <StyledSidebar>
-      <StyledSidebarHeader>Crime Club</StyledSidebarHeader>
 
       <StyledNavList>
         {navItems.map(item => (
