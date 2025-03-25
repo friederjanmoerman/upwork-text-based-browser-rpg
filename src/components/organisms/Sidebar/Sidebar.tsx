@@ -7,12 +7,12 @@ import {
   Bank,
   ShoppingCartSimple,
   PokerChip,
-  Dumbbell,
+  Barbell,
   FirstAid,
   Newspaper,
   LockLaminated,
   HouseLine,
-  Lipstick,
+  Lamp,
   CrosshairSimple,
 } from "@phosphor-icons/react"
 
@@ -29,12 +29,12 @@ const navItems: NavItemData[] = [
   { label: "Bank", icon: Bank },
   { label: "Black Market", icon: ShoppingCartSimple },
   { label: "Casino", icon: PokerChip },
-  { label: "Gym", icon: Dumbbell },
+  { label: "Gym", icon: Barbell },
   { label: "Hospital", icon: FirstAid },
   { label: "News", icon: Newspaper },
   { label: "Prison", icon: LockLaminated },
   { label: "Real Estate Agency", icon: HouseLine },
-  { label: "Red Light District", icon: Lipstick },
+  { label: "Red Light District", icon: Lamp },
   { label: "Shooting Range", icon: CrosshairSimple },
 ]
 
