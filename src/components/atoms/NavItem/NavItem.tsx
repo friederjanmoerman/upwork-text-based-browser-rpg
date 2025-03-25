@@ -6,6 +6,11 @@ interface NavItemProps {
   icon?: React.ElementType
 }
 
-export function NavItem({ label, icon }: NavItemProps) {
-  return <StyledNavItem>{label}</StyledNavItem>
+export function NavItem({ label, icon: Icon }: NavItemProps) {
+  return (
+    <StyledNavItem>
+      {Icon && <Icon size={24} weight="fill" color="white" />}
+      {label}
+    </StyledNavItem>
+  )
 }

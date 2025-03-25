@@ -1,35 +1,50 @@
+// src/components/organisms/Sidebar/Sidebar.tsx
+
 import React from "react"
-
+import { StyledSidebar, StyledNavList, StyledFooter } from "./Sidebar.styles"
 import {
-  StyledSidebar,
-  StyledNavList,
-  StyledNavItem,
-  StyledNavItemLabel,
-  StyledFooter,
-} from "./Sidebar.styles"
+  AirplaneTilt,
+  Bank,
+  ShoppingCartSimple,
+  PokerChip,
+  Dumbbell,
+  FirstAid,
+  Newspaper,
+  LockLaminated,
+  HouseLine,
+  Lipstick,
+  CrosshairSimple,
+} from "@phosphor-icons/react"
 
-interface NavItem {
+import { NavItem } from "@/components/atoms/NavItem/NavItem"
+
+interface NavItemData {
   label: string
   icon?: React.ElementType
 }
 
-const navItems: NavItem[] = [
-  { label: "Commit a Crime", icon:  },
-  { label: "Commit a Crime" },
-  { label: "Commit a Crime" },
-  { label: "Commit a Crime" },
+// 1) Define your nav items & pick suitable icons
+const navItems: NavItemData[] = [
+  { label: "Airport", icon: AirplaneTilt },
+  { label: "Bank", icon: Bank },
+  { label: "Black Market", icon: ShoppingCartSimple },
+  { label: "Casino", icon: PokerChip },
+  { label: "Gym", icon: Dumbbell },
+  { label: "Hospital", icon: FirstAid },
+  { label: "News", icon: Newspaper },
+  { label: "Prison", icon: LockLaminated },
+  { label: "Real Estate Agency", icon: HouseLine },
+  { label: "Red Light District", icon: Lipstick },
+  { label: "Shooting Range", icon: CrosshairSimple },
 ]
 
 export function Sidebar() {
   return (
     <StyledSidebar>
-
       <StyledNavList>
+        The City
         {navItems.map(item => (
-          <StyledNavItem key={item.label}>
-            {item.icon && <item.icon />}
-            <StyledNavItemLabel>{item.label}</StyledNavItemLabel>
-          </StyledNavItem>
+          <NavItem key={item.label} label={item.label} icon={item.icon} />
         ))}
       </StyledNavList>
 
