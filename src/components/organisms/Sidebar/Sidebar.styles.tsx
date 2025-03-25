@@ -16,7 +16,7 @@ export const StyledNavList = styled.ul`
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   padding: 0 12px;
 `
 

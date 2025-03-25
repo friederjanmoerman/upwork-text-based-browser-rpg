@@ -11,3 +11,20 @@ export const StyledNavItem = styled.li`
   gap: 8px;
   align-items: center;
 `
+export const StyledIconWrapper = styled.div`
+  padding: 2px;
+  border-radius: 4px;
+  border: 1px solid #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const StyledIcon = styled.div`
+  padding: 2px;
+  background: #0a84ff;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`

@@ -1,5 +1,5 @@
 import React from "react"
-import { StyledNavItem } from "./NavItem.styles"
+import { StyledIcon, StyledIconWrapper, StyledNavItem } from "./NavItem.styles"
 
 interface NavItemProps {
   label: string
@@ -9,7 +9,9 @@ interface NavItemProps {
 export function NavItem({ label, icon: Icon }: NavItemProps) {
   return (
     <StyledNavItem>
-      {Icon && <Icon size={24} weight="fill" color="white" />}
+      <StyledIconWrapper>
+        <StyledIcon>{Icon && <Icon size={12} weight="fill" color="white" />}</StyledIcon>
+      </StyledIconWrapper>
       {label}
     </StyledNavItem>
   )
