@@ -4,10 +4,11 @@ export const StyledSidebar = styled.nav`
   width: 220px;
   height: 100vh;
   background-color: #141414;
-  color: #fafafa;
+  color: #71717a;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  font-size: 12px;
 `
 
 export const StyledNavList = styled.ul`

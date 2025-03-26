@@ -14,6 +14,10 @@ import {
   HouseLine,
   Lamp,
   CrosshairSimple,
+  Fire,
+  Car,
+  Pill,
+  NotePencil,
 } from "@phosphor-icons/react"
 
 import { NavItem } from "@/components/atoms/NavItem/NavItem"
@@ -24,8 +28,14 @@ interface NavItemData {
   icon?: React.ElementType
 }
 
-// 1) Define your nav items & pick suitable icons
-const navItems: NavItemData[] = [
+const navItemsMissions: NavItemData[] = [
+  { label: "Commit A Crime", icon: Fire },
+  { label: "Grand Theft Auto", icon: Car },
+  { label: "Drugs", icon: Pill },
+  { label: "Contract", icon: NotePencil },
+]
+
+const navItemsPlaces: NavItemData[] = [
   { label: "Airport", icon: AirplaneTilt, background: "#3b82f7" },
   { label: "Bank", icon: Bank, background: "#6bd45f" },
   { label: "Black Market", icon: ShoppingCartSimple, background: "#2c2c2e" },
@@ -43,8 +53,13 @@ export function Sidebar() {
   return (
     <StyledSidebar>
       <StyledNavList>
+        {navItemsMissions.map(item => (
+          <NavItem key={item.label} label={item.label} icon={item.icon} background={item.background} />
+        ))}
+      </StyledNavList>
+      <StyledNavList>
         The City
-        {navItems.map(item => (
+        {navItemsPlaces.map(item => (
           <NavItem key={item.label} label={item.label} icon={item.icon} background={item.background} />
         ))}
       </StyledNavList>
