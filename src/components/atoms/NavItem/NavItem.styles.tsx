@@ -1,7 +1,7 @@
 import { IconBadge } from "@medusajs/ui"
 import styled from "styled-components"
 
-export const StyledNavItem = styled(IconBadge)`
+export const StyledNavItem = styled.li`
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
@@ -13,7 +13,7 @@ export const StyledNavItem = styled(IconBadge)`
   align-items: center;
 `
 
-export const StyledIconWrapper = styled.div`
+export const StyledIconWrapper = styled(IconBadge)`
   padding: 2px;
   border-radius: 4px;
   border: 1px solid #333333;
@@ -22,9 +22,9 @@ export const StyledIconWrapper = styled.div`
   justify-content: center;
 `
 
-export const StyledIcon = styled.div`
+export const StyledIcon = styled.div<{ backgroundColor?: string }>`
+  background-color: ${({ backgroundColor }) => backgroundColor || "transparent"};
   padding: 2px;
-  background: #0a84ff;
   border-radius: 2px;
   display: flex;
   align-items: center;
