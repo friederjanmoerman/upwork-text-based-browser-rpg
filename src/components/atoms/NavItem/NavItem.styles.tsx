@@ -1,16 +1,18 @@
+import { IconBadge } from "@medusajs/ui"
 import styled from "styled-components"
 
-export const StyledNavItem = styled.li`
+export const StyledNavItem = styled(IconBadge)`
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #a1a1aa;
   cursor: pointer;
   display: flex;
   gap: 8px;
   align-items: center;
 `
+
 export const StyledIconWrapper = styled.div`
   padding: 2px;
   border-radius: 4px;
