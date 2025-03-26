@@ -11,6 +11,11 @@ export const StyledSidebar = styled.nav`
   font-size: 12px;
 `
 
+export const StyledSearchInputWrapper = styled.div`
+  width: 100%;
+  padding: 12px;
+`
+
 export const StyledNavList = styled.ul`
   list-style: none;
   margin: 0;
@@ -18,7 +23,9 @@ export const StyledNavList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 0 12px;
+  padding: 12px 0;
+  margin: 0 12px;
+  border-top: 1px dotted #71717a;
 `
 
 export const StyledFooter = styled.footer`

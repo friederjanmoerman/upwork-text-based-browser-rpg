@@ -1,7 +1,7 @@
 // src/components/organisms/Sidebar/Sidebar.tsx
 
 import React from "react"
-import { StyledSidebar, StyledNavList, StyledFooter } from "./Sidebar.styles"
+import { StyledSidebar, StyledNavList, StyledFooter, StyledSearchInputWrapper } from "./Sidebar.styles"
 import {
   AirplaneTilt,
   Bank,
@@ -21,6 +21,7 @@ import {
 } from "@phosphor-icons/react"
 
 import { NavItem } from "@/components/atoms/NavItem/NavItem"
+import { SearchInput } from "@/components/atoms/SearchInput/SearchInput"
 
 interface NavItemData {
   label: string
@@ -52,6 +53,9 @@ const navItemsPlaces: NavItemData[] = [
 export function Sidebar() {
   return (
     <StyledSidebar>
+      <StyledSearchInputWrapper>
+        <SearchInput />
+      </StyledSearchInputWrapper>
       <StyledNavList>
         {navItemsMissions.map(item => (
           <NavItem key={item.label} label={item.label} icon={item.icon} background={item.background} />

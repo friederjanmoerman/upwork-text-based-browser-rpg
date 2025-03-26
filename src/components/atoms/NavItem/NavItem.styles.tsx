@@ -11,6 +11,9 @@ export const StyledNavItem = styled.li`
   display: flex;
   gap: 8px;
   align-items: center;
+  &:hover {
+    color: #fff;
+  }
 `
 
 export const StyledIconWrapper = styled(IconBadge)`
