@@ -11,7 +11,7 @@
   "dependencies": {
     "@medusajs/ui": "^2.0.0",
     "@phosphor-icons/react": "^2.1.7",
-    "next": "14.2.7",
+    "next": "^14.2.28",
     "react": "^18",
     "react-dom": "^18",
     "styled-components": "^6.1.15"

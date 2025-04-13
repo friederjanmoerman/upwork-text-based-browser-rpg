@@ -1,7 +1,5 @@
-// src/components/organisms/Sidebar/Sidebar.tsx
-
 import React from "react"
-import { StyledSidebar, StyledNavList, StyledFooter, StyledSearchInputWrapper } from "./Sidebar.styles"
+import { StyledSidebar, StyledNavList, StyledFooter, StyledSearchInputWrapper } from "./ProfileBar.styles"
 import {
   AirplaneTilt,
   Bank,
@@ -50,7 +48,7 @@ const navItemsPlaces: NavItemData[] = [
   { label: "Shooting Range", icon: CrosshairSimple, background: "#2c2c2e" },
 ]
 
-const ProfileBar() => {
+const ProfileBar = () => {
   return (
     <StyledSidebar>
       <StyledSearchInputWrapper>
@@ -73,4 +71,4 @@ const ProfileBar() => {
   )
 }
 
-export default ProfileBar();
+export default ProfileBar

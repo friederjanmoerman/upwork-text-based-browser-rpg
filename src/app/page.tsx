@@ -1,13 +1,11 @@
 "use client"
 
-// import { CreateAccount } from "@/components/organisms/CreateAccount/CreateAccount"
-import { Sidebar } from "@/components/organisms/Sidebar/Sidebar"
+import DashboardWrapper from "@/components/organisms/Dashboard/DashboardWrapper/DashboardWrapper"
 
 export default function Home() {
   return (
     <>
-      <Sidebar />
-      {/* <CreateAccount /> */}
+      <DashboardWrapper />
     </>
   )
 }
