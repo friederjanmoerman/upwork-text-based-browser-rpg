@@ -15,6 +15,25 @@ export const StyledLeaderboardItem = styled.li`
     color: #fff;
   }
 `
+export const StyledLeaderboardPlayerName = styled.div`
+  flex: 1;
+  max-width: 125px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+`
+
+export const StyledLeaderboardNumber = styled.div`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  color: #a1a1aa;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 
 export const StyledIconWrapper = styled.div`
   padding: 3px;

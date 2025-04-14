@@ -1,4 +1,10 @@
-import { StyledIcon, StyledIconWrapper, StyledLeaderboardItem } from "./LeaderboardItem.styles"
+import {
+  StyledIcon,
+  StyledIconWrapper,
+  StyledLeaderboardItem,
+  StyledLeaderboardNumber,
+  StyledLeaderboardPlayerName,
+} from "./LeaderboardItem.styles"
 
 interface LeaderboardItemProps {
   rank: number
@@ -6,10 +12,11 @@ interface LeaderboardItemProps {
   icon?: React.ElementType
 }
 
-export function LeaderboardItem({ name, icon: Icon }: LeaderboardItemProps) {
+export function LeaderboardItem({ rank, name, icon: Icon }: LeaderboardItemProps) {
   return (
     <StyledLeaderboardItem>
-      {name}
+      <StyledLeaderboardNumber>{rank}</StyledLeaderboardNumber>
+      <StyledLeaderboardPlayerName>{name}</StyledLeaderboardPlayerName>
       <StyledIconWrapper>
         <StyledIcon>{Icon && <Icon size={12} weight="fill" color="white" />}</StyledIcon>
       </StyledIconWrapper>
