@@ -1,9 +1,21 @@
 import React from "react"
-import { StyledSidebar, StyledNavList, StyledFooter, StyledSearchInputWrapper } from "./ProfileBar.styles"
-import { City, Car, Pill, NotePencil, NavigationArrow, MedalMilitary, Heart, Money, Bank } from "@phosphor-icons/react"
+import { StyledSidebar, StyledNavList } from "./ProfileBar.styles"
+import {
+  NavigationArrow,
+  MedalMilitary,
+  Heart,
+  Money,
+  Bank,
+  NumberOne,
+  NumberTwo,
+  NumberFour,
+  NumberFive,
+  NumberThree,
+} from "@phosphor-icons/react"
 
 import { NavItem } from "@/components/atoms/NavItem/NavItem"
 import ProfileCard from "@/components/molecules/ProfileCard/ProfileCard"
+import Leaderboard from "@/components/molecules/Leaderboard/Leaderboard"
 
 interface NavItemData {
   label: string
@@ -19,6 +31,14 @@ const profileData: NavItemData[] = [
   { label: "$300.045", icon: Bank },
 ]
 
+const topPlayersData: NavItemData[] = [
+  { label: "Joan_Brown", icon: NumberOne },
+  { label: "Cheryl.Towne", icon: NumberTwo },
+  { label: "Karl.Jerde", icon: NumberThree },
+  { label: "Name", icon: NumberFour },
+  { label: "Name", icon: NumberFive },
+]
+
 const ProfileBar = () => {
   return (
     <StyledSidebar>
@@ -28,8 +48,7 @@ const ProfileBar = () => {
           <NavItem key={item.label} label={item.label} icon={item.icon} background={item.background} />
         ))}
       </StyledNavList>
-
-      <StyledFooter>&copy; {new Date().getFullYear()} Crime Club</StyledFooter>
+      <Leaderboard />
     </StyledSidebar>
   )
 }
