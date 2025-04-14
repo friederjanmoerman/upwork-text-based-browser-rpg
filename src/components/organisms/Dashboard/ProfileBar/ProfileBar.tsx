@@ -10,12 +10,14 @@ interface NavItemData {
   label: string
   background?: string
   icon?: React.ElementType
+  progress?: number
+  progressColor?: string
 }
 
 const profileData: NavItemData[] = [
   { label: "Amsterdam, NL", icon: NavigationArrow },
-  { label: "Legendary Don", icon: MedalMilitary },
-  { label: "Health", icon: Heart },
+  { label: "Legendary Don", icon: MedalMilitary, progress: 33, progressColor: "#FF9F0A" },
+  { label: "Health", icon: Heart, progress: 100, progressColor: "#C72525" },
   { label: "$300.045", icon: Money },
   { label: "$300.045", icon: Bank },
 ]
@@ -42,7 +44,14 @@ const ProfileBar = () => {
       <ProfileCard name={"Name That Is Long"} family={"Happy Unicorn"} />
       <StyledNavList>
         {profileData.map(item => (
-          <NavItem key={item.label} label={item.label} icon={item.icon} background={item.background} />
+          <NavItem
+            key={item.label}
+            label={item.label}
+            icon={item.icon}
+            background={item.background}
+            progress={item.progress}
+            progressColor={item.progressColor}
+          />
         ))}
       </StyledNavList>
       <Leaderboard title="Top Players" data={leaderboardPlayers} />
