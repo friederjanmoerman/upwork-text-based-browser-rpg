@@ -20,3 +20,19 @@ export const StyledLeaderboard = styled.ul`
     background: #1b1b1b;
   }
 `
+
+export const StyledLeaderboardHeader = styled.a`
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #71717a;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px 0;
+  &:hover {
+    color: #fff;
+  }
+`

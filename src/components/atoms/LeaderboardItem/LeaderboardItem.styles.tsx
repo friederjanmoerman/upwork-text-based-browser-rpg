@@ -10,8 +10,8 @@ export const StyledLeaderboardItem = styled.li`
   display: flex;
   gap: 8px;
   border-radius: 6px;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   &:hover {
     color: #fff;
   }
