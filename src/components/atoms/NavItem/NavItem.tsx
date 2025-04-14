@@ -1,11 +1,6 @@
 import React from "react"
-import {
-  StyledIcon,
-  StyledIconWrapper,
-  StyledNavItem,
-  StyledProgressBar,
-  StyledProgressContainer,
-} from "./NavItem.styles"
+import { StyledIcon, StyledIconWrapper, StyledNavItem } from "./NavItem.styles"
+import ProgressBar from "../ProgressBar/ProgressBar"
 
 interface NavItemProps {
   label: string
@@ -21,13 +16,10 @@ export function NavItem({ label, icon: Icon, background, progress, progressColor
       <StyledIconWrapper>
         <StyledIcon backgroundColor={background}>{Icon && <Icon size={12} weight="fill" color="white" />}</StyledIcon>
       </StyledIconWrapper>
+
       <div style={{ flex: 1 }}>
         <div>{label}</div>
-        {progress !== undefined && (
-          <StyledProgressContainer>
-            <StyledProgressBar style={{ width: `${progress}%`, backgroundColor: progressColor || "#22c55e" }} />
-          </StyledProgressContainer>
-        )}
+        {progress !== undefined && <ProgressBar value={progress} color={progressColor} />}
       </div>
     </StyledNavItem>
   )
