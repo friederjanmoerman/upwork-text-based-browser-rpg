@@ -50,7 +50,7 @@ const navItemsPlaces: NavItemData[] = [
   { label: "Shooting Range", icon: CrosshairSimple, background: "#2c2c2e" },
 ]
 
-const ProfileBar() => {
+const Sidebar = () => {
   return (
     <StyledSidebar>
       <StyledSearchInputWrapper>
@@ -73,4 +73,4 @@ const ProfileBar() => {
   )
 }
 
-export default ProfileBar();
+export default Sidebar
