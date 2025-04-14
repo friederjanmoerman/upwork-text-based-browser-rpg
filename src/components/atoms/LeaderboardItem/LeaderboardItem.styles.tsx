@@ -9,6 +9,7 @@ export const StyledLeaderboardItem = styled.li`
   cursor: pointer;
   display: flex;
   gap: 8px;
+  border-radius: 6px;
   align-items: center;
   justify-content: space-between;
   &:hover {
