@@ -15,7 +15,6 @@ import {
 } from "./CreateAccount.styles"
 
 const handleButtonClick = () => {
-  // Your logic here
   console.log("Button clicked!")
 }
 
