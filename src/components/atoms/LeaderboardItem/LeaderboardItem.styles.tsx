@@ -1,4 +1,3 @@
-import { IconBadge } from "@medusajs/ui"
 import styled from "styled-components"
 
 export const StyledLeaderboardItem = styled.li`
@@ -11,18 +10,20 @@ export const StyledLeaderboardItem = styled.li`
   display: flex;
   gap: 8px;
   align-items: center;
+  justify-content: space-between;
   &:hover {
     color: #fff;
   }
 `
 
-export const StyledIconWrapper = styled(IconBadge)`
-  padding: 2px;
+export const StyledIconWrapper = styled.div`
+  padding: 3px;
   border-radius: 4px;
-  border: 1px solid #333333;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
 `
 
 export const StyledIcon = styled.div<{ backgroundColor?: string }>`
