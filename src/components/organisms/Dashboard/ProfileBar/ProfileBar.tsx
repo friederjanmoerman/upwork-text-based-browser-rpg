@@ -1,17 +1,6 @@
 import React from "react"
 import { StyledSidebar, StyledNavList } from "./ProfileBar.styles"
-import {
-  NavigationArrow,
-  MedalMilitary,
-  Heart,
-  Money,
-  Bank,
-  NumberOne,
-  NumberTwo,
-  NumberFour,
-  NumberFive,
-  NumberThree,
-} from "@phosphor-icons/react"
+import { NavigationArrow, MedalMilitary, Heart, Money, Bank } from "@phosphor-icons/react"
 
 import { NavItem } from "@/components/atoms/NavItem/NavItem"
 import ProfileCard from "@/components/molecules/ProfileCard/ProfileCard"
@@ -29,14 +18,6 @@ const profileData: NavItemData[] = [
   { label: "Health", icon: Heart },
   { label: "$300.045", icon: Money },
   { label: "$300.045", icon: Bank },
-]
-
-const topPlayersData: NavItemData[] = [
-  { label: "Joan_Brown", icon: NumberOne },
-  { label: "Cheryl.Towne", icon: NumberTwo },
-  { label: "Karl.Jerde", icon: NumberThree },
-  { label: "Name", icon: NumberFour },
-  { label: "Name", icon: NumberFive },
 ]
 
 const ProfileBar = () => {
