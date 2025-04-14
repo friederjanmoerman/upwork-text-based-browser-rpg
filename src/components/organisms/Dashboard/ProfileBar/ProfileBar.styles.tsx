@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledSidebar = styled.nav`
-  width: 220px;
+  width: 270px;
   height: 100vh;
   background-color: #141414;
   color: #71717a;

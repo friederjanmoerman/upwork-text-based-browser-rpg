@@ -39,7 +39,7 @@ const leaderboardFamilies = [
 const ProfileBar = () => {
   return (
     <StyledSidebar>
-      <ProfileCard />
+      <ProfileCard name={"Name That Is Long"} family={"Happy Unicorn"} />
       <StyledNavList>
         {profileData.map(item => (
           <NavItem key={item.label} label={item.label} icon={item.icon} background={item.background} />
