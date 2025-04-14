@@ -5,9 +5,9 @@ import { StyledDashboardContent, StyledDashboardWrapper } from "./DashboardWrapp
 const DashboardWrapper = () => {
   return (
     <StyledDashboardWrapper>
-      <ProfileBar />
-      <StyledDashboardContent></StyledDashboardContent>
       <Sidebar />
+      <StyledDashboardContent></StyledDashboardContent>
+      <ProfileBar />
     </StyledDashboardWrapper>
   )
 }

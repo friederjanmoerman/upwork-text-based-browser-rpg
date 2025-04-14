@@ -21,7 +21,7 @@ import {
 } from "@phosphor-icons/react"
 
 import { NavItem } from "@/components/atoms/NavItem/NavItem"
-import ProfileCard from "@/components/molecules/ProfileCard/ProfileCard"
+import { SearchInput } from "@/components/atoms/SearchInput/SearchInput"
 
 interface NavItemData {
   label: string
@@ -53,7 +53,9 @@ const navItemsPlaces: NavItemData[] = [
 const Sidebar = () => {
   return (
     <StyledSidebar>
-      <ProfileCard />
+      <StyledSearchInputWrapper>
+        <SearchInput />
+      </StyledSearchInputWrapper>
       <StyledNavList>
         {navItemsMissions.map(item => (
           <NavItem key={item.label} label={item.label} icon={item.icon} background={item.background} />
